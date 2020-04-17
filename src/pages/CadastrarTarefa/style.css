@@ -1,0 +1,35 @@
+#form {
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px #001c7f, -10px -10px 10px #0026ab;
+}
+
+#form .form-group input {
+  background: #1134ad;
+  color: #ffffff;
+  border: none;
+  box-shadow: inset 5px 5px 5px #0e2c93, inset -5px -5px 5px #143cc7;
+}
+
+#form .form-group input::placeholder {
+  color: #b1b9cc;
+}
+
+#form .form-group input,
+#form button {
+  border-radius: 20px;
+}
+
+#form button {
+  border: none;
+  background: #5f6cfc;
+  color: #f6f8ff;
+  box-shadow: 5px 5px 5px #001c7f, -5px -5px 5px #0026ab;
+}
+
+#form button:active {
+  box-shadow: inset 5px 5px 5px #515cd6, inset -5px -5px 5px #6d7cff;
+}
+
+#form .form-group a {
+  color: #7985ba;
+}

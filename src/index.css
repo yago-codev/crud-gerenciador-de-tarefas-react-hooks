@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  background: #002195;
+  color: #a1b1f9;
+}
