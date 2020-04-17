@@ -55,13 +55,18 @@ export default function CadastrarTarefa() {
             required
             value={tarefa}
             onChange={salvarTarefaNoEstado}
+            data-testid="input-tarefa"
           />
           <Form.Control.Feedback type="invalid">
             A tarefa deve conter ao menos 5 caracteres
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group>
-          <Button type="submit" className="w-100">
+          <Button
+            type="submit"
+            className="w-100"
+            data-testid="btn-cadastrar-tarefa"
+          >
             Submit
           </Button>
         </Form.Group>
@@ -69,7 +74,12 @@ export default function CadastrarTarefa() {
           <A href="/">Voltar</A>
         </Form.Group>
       </Form>
-      <Modal id="modal" show={exibirModal} onHide={fecharModal}>
+      <Modal
+        id="modal"
+        show={exibirModal}
+        onHide={fecharModal}
+        data-testid="modal"
+      >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body className="text-center">
           Tarefa criada com sucesso!

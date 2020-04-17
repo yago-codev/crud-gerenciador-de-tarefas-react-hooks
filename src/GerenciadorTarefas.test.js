@@ -1,10 +1,12 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import ReactDOM from "react-dom";
 
 import GerenciadorTarefas from "./GerenciadorTarefas";
 
-test("renders learn react link", () => {
-  const { getByText } = render(<GerenciadorTarefas />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("Teste do componente gerenciador de tarefas", () => {
+  it("Deve renderizar o componente sem erros", () => {
+    const div = document.createElement("div");
+    ReactDOM.render(<GerenciadorTarefas />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 });
