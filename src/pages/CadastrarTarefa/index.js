@@ -16,8 +16,8 @@ export default function CadastrarTarefa() {
           <Form.Control
             placeholder="Nome da nova tarefa..."
             className="text-center"
-            minLenth="5"
-            maxLength="10"
+            minLength="5"
+            maxLength="100"
             required
           />
           <Form.Control.Feedback type="invalid">
@@ -33,6 +33,17 @@ export default function CadastrarTarefa() {
           <A href="/">Voltar</A>
         </Form.Group>
       </Form>
+      <Modal id="modal" show={false}>
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body className="text-center">
+          Tarefa criada com sucesso!
+        </Modal.Body>
+        <Modal.Footer className="pb-4">
+          <A href="/" className="m-auto">
+            <Button type="button">Lista de Tarefas</Button>
+          </A>
+        </Modal.Footer>
+      </Modal>
     </section>
   );
 }

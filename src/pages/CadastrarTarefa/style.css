@@ -33,3 +33,48 @@
 #form .form-group a {
   color: #7985ba;
 }
+
+#modal .modal-content {
+  border: none;
+  background: #002195;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 10px #001c7f, inset -5px -5px 10px #0026ab;
+}
+
+#modal .modal-content .modal-header .close:active > span:nth-child(1) {
+  box-shadow: inset 3px 3px 5px #001a77, inset -3px -3px 5px #0028b3;
+}
+
+#modal .modal-content .modal-header .close span:nth-child(1) {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  color: #f6f8ff;
+  border-radius: 50%;
+  background: #1134ad;
+  box-shadow: 3px 3px 5px #001a77, -3px -3px 5px #0028b3;
+}
+
+#modal .modal-content .modal-header .close span:nth-child(2) {
+  display: none;
+}
+
+#modal .modal-content .modal-header,
+#modal .modal-content .modal-footer {
+  border: none;
+}
+
+#modal .modal-content .modal-body {
+  color: white;
+}
+
+#modal .modal-content .modal-footer button {
+  background: #5f6cfc;
+  border: none;
+  box-shadow: 5px 5px 5px #001c7f, -5px -5px 5px #0026ab;
+}
+
+#modal .modal-content .modal-footer button:active {
+  box-shadow: inset 5px 5px 5px #515cd6, inset -5px -5px 5px #6d7cff;
+}
