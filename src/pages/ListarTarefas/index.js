@@ -4,6 +4,8 @@ import { Container, Table } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
+import ItensListarTarefas from '../../Components/ItensListarTarefas';
+
 import "./style.css";
 
 export default function ListarTarefas() {
@@ -45,7 +47,12 @@ export default function ListarTarefas() {
             </th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <ItensListarTarefas
+            tarefas={tarefas}
+            recarregarTarefas={carregarTarefas}
+          />
+        </tbody>
       </Table>
     </Container>
   );
