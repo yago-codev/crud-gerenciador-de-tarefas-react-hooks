@@ -1,0 +1,21 @@
+.table-responsive {
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px #001c7f, -10px -10px 10px #0026ab;
+}
+
+#tabela thead tr th {
+  border: none;
+  background: #1134ad;
+  color: #a1b1f9;
+}
+
+#tabela thead tr th a {
+  border: none;
+  background: #5f6cfc;
+  color: #f6f8ff;
+  box-shadow: 5px 5px 5px #0e2c93, -5px -5px 5px #143cc7;
+}
+
+#tabela thead tr th a:active {
+  box-shadow: inset 5px 5px 5px #515cd6, inset -5px -5px 5px #6d7cff;
+}
