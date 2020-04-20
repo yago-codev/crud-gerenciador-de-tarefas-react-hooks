@@ -6,7 +6,7 @@ import GerenciadorTarefas from "./GerenciadorTarefas";
 describe("Teste do componente gerenciador de tarefas", () => {
   it("Deve renderizar o componente sem erros", () => {
     const div = document.createElement("div");
-    ReactDOM.render(<GerenciadorTarefas />, div);
+    ReactDOM.render(<GerenciadorTarefas tarefas={[]} recarregarTarefas={() => false} />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

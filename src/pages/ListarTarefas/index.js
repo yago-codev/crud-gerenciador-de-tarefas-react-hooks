@@ -34,8 +34,8 @@ export default function ListarTarefas() {
       <Table striped hover responsive id="tabela" test-id="tabela">
         <thead>
           <tr>
-            <th>Tarefa</th>
-            <th>
+            <th width={80}>Tarefa</th>
+            <th width={20}>
               <A
                 href="/cadastrar"
                 className="btn btn-sm"
@@ -54,6 +54,6 @@ export default function ListarTarefas() {
           />
         </tbody>
       </Table>
-    </Container>
+    </Container >
   );
 }
